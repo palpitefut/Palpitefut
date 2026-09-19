@@ -1,0 +1,8 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Palpite — Palpiteiro FC</title><link rel="stylesheet" href="style.css"></head><body>
+<header><div class="container nav"><a class="logo" href="index.html">PALPITEIRO <b>FC</b></a><nav><a href="index.html">Início</a><a href="historico.html">Histórico</a></nav></div></header>
+<main class="article"><div class="container"><div id="content"></div><div class="warning">⚠️ Palpite não é garantia de resultado. Apostas envolvem risco de perda financeira.</div></div></main>
+<footer><div class="copy">© 2026 Palpiteiro FC</div></footer>
+<script src="dados.js"></script><script>
+const i=new URLSearchParams(location.search).get("id"); const p=palpites[Number(i)];
+document.getElementById("content").innerHTML=p?`<span class="kicker">${p.campeonato}</span><h1>${p.casa} x ${p.fora}</h1><p class="muted">${p.data} · ${p.hora}</p><div class="bigpick"><small>PALPITE</small><strong>${p.mercado}</strong><span>Odd: ${p.odd}</span></div><h2>Análise</h2><p>${p.texto}</p>`:`<h1>Palpite não encontrado</h1>`;
+</script></body></html>

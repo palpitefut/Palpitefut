@@ -1,0 +1,7 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Post — Palpiteiro FC</title><link rel="stylesheet" href="style.css"></head><body>
+<header><div class="container nav"><a class="logo" href="index.html">PALPITEIRO <b>FC</b></a><nav><a href="index.html">Início</a><a href="historico.html">Histórico</a></nav></div></header>
+<main class="article"><div class="container" id="content"></div></main><footer><div class="copy">© 2026 Palpiteiro FC</div></footer>
+<script src="dados.js"></script><script>
+const i=new URLSearchParams(location.search).get("id");const p=posts[Number(i)];
+document.getElementById("content").innerHTML=p?`<span class="kicker">BLOG · ${p.data}</span><h1>${p.titulo}</h1><p class="lead">${p.resumo}</p><h2>Análise</h2><p>${p.texto}</p>`:`<h1>Post não encontrado</h1>`;
+</script></body></html>
