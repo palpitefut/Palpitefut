@@ -1,6 +1,6 @@
 const palpites = [
   {
-    data: "19/09/2026",
+    data: "19/09/2026", 
     hora: "16:00",
     campeonato: "Brasileirão",
     casa: "Atlético-MG",
